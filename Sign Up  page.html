@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Sign Up page.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Sign Up Page</title>
+  </head>
+  <body>
+<html>
+<body onload="loadfunction()">
+
+  <script>
+    function validateform(){  
+    var fname=document.signup.fname.value;
+    var lname=document.signup.lname.value;
+    var user=document.signup.user.value;   
+    var pass=document.signup.pwsd.value;
+    var confirm_pass=document.signup.pwsdc.value;  
+      
+    if (fname==null || fname==""){  
+      alert("First Name can't be blank");  
+      return false;
+    }
+
+    if (lname==null || lname==""){  
+      alert("Last Name can't be blank.");  
+      return false;   
+    }
+    if (user==null || user==""){
+      alert("Username can't be blank.");
+      return false;
+    }
+    if(pass.length<6){  
+      alert("Password must be at least 6 characters long.");  
+      return false;  
+    }
+    if(pass.length>15){  
+      alert("Password must be at shorter than 15 characters.");  
+      return false;  
+    }
+    else if (pass != confirm_pass) {
+      alert("☒ Use same password");
+      return false;
+    } 
+    else {
+      alert("🗹 Password Matched")
+      
+    }
+    } 
+
+    function myFunction() {
+    alert("Thank You For Signing Up with us.")
+    }
+
+    function loadfunction(){
+      alert("Page is loaded");
+    }
+
+   </script>
+
+    <section class="login">
+        <header>
+          <h1 style="color:#ffffffb8;">Sign Up</h1><br>
+        </header>
+    
+         <form name="signup" action="Login page.html" onsubmit="return validateform()" method="post">
+            <label for="fname" style="color: #ffffffb8;">FIRST NAME :</label><br>
+            <input type="text" id="fname" name="fname" value="" style="background-color:black; color:#ffffffb8;"><br><br>
+            <label for="lname" style="color: #ffffffb8;">LAST NAME :</label><br>
+            <input type="text" id="lname" name="lname" value="" style="background-color:black; color:#ffffffb8;"><br><br>
+            <label for="user" style="color: #ffffffb8;">SET USERNAME :</label><br>
+            <input type="text" id="user" name="user" value="" style="background-color:black; color:#ffffffb8;"><br><br>
+            <label for="pwsd" style="color: #ffffffb8;">SET PASSWORD :</label><br>
+            <input type="text" id="pwsd" name="pwsd" value="" style="background-color:black; color:#ffffffb8;"><br><br>
+            <label for="pwsdc" style="color: #ffffffb8;">CONFIRM PASSWORD :</label><br>
+            <input type="password" id="pwsdc" name="pwsdc" value="" style="background-color:black; color:#ffffffb8;"><br><br>
+
+            <input type="submit" style="background-color:black ;color:#00c5ed; font-size: 25px;" value="REGISTER" id="Button" onsubmit="myFunction()">
+            
+        </form> 

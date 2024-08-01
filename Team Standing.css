@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+.nav-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+ 
+}
+
+.nav-flex-row li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 20px 15px;
+  float: center;
+}
+
+.nav-flex-row li a {
+  font-family: 'Big Shoulders Text';
+  color: #ffffff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.nav-flex-row li a:hover {
+  background-color: #111;
+}
+.team {
+    font-family: 'Big Shoulders Text';
+    background-image: url(img/Slide1.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    
+}
+#back_button:hover{
+  width:110%;
+  transition: 1s ease;
+  
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 100px 600px 100px 100px 100px;
+    gap: 10px;
+    background-color: #000000;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-image: linear-gradient(rgb(72, 113, 190), rgb(86, 86, 67));
+    text-align: center;
+    color: #fff8f8;
+    padding: 30px 0;
+    font-size: 30px;
+  }
+

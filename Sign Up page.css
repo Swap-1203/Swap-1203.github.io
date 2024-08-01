@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+.login {
+    font-family: 'Big Shoulders Text', cursive;
+    height: 900px;
+    background-image: url(img/F1-1.avif);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+
+input:hover{
+    width: 12%;
+    background-image: url(img/F1-6.jpg);
+    opacity: 0.8;
+
+}
+
+#Button:hover{
+    width:10%;
+    
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+                  
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(4, 4, 4);       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(72, 196, 231);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(160, 159, 156);  /* creates padding around scroll thumb */
+  }

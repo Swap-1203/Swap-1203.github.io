@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Login page.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Login Page</title>
+  </head>
+  <body>
+<html>
+<body onload="loadfunction()">
+  <script>
+    function validateform(){  
+    var user=document.login.user.value;   
+    var password=document.login.pwsd.value;
+    
+    if (user==null || user==""){
+      alert("Username can't be blank");
+      return false;
+    }
+    else if(password.length<6){  
+      alert("Password must be at least 6 characters long.");  
+      return false;  
+      }  
+    } 
+
+    function myFunction() {
+    alert(document.getElementById("Button").innerHTML = "You have Signed In.")
+    }
+
+    function loadfunction(){
+      alert("Page is loaded");
+    }
+
+  </script>
+
+    <section class="login">
+        <header>
+          <h1 style="color:#ffffffb8;">Login</h1><br>
+        </header>
+    
+         <form name="login" action="F1 Home Page.html" onsubmit="return validateform()" method="post">
+            <label for="user" style="color: #ffffffb8;">USER NAME :</label><br>
+            <input type="text" id="user" name="user" value="" style="background-color:black; color:#ffffff;"><br><br>
+            <label for="pwsd" style="color: #ffffffb8;">PASSWORD :</label><br>
+            <input type="password" id="pwsd" name="pwsd" value="" style="background-color:black; color:#ffffff;"><br><br>
+            <input type="submit" style="background-color:rgba(20, 19, 19, 0.685) ;color:#00c5ed; font-size: 25px;" value="SUBMIT" id="Button" onsubmit="myFunction()">
+        </form> 
+        <nav>
+          <ul class="nav-flex-row">
+            <li class="nav-item">
+              <a href="Sign Up  page.html">Sign Up</a>
+            </li>
+          </ul>
+        </nav>
+    </section>
